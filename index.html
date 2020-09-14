@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vet clinic</title>
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css"> -->
   <link rel="stylesheet" href="css/styles-min.css">
 </head>
 <body>
@@ -194,9 +194,11 @@
     <section class="be-aware">
       <div class="container">
         <div class="sign-in-form">
-          <h2 class="visually-hidden">Sign in</h2>
-          <input placeholder="Укажите Ваш email адрес " name="email" type="email">
-          <a class="btn" href="#">Подписаться</a>
+          <h2>Будь в курсе событий</h2>
+          <form action="https://echo/htmlacademy.ru">
+            <input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Укажите Ваш email адрес " name="email" type="email" required>
+          <input class="btn" type="submit">
+          </form>
         </div>
       </div>
     </section>
@@ -221,7 +223,7 @@
                 <p class="date">28.08.2020</p>
               </div>
               <h3>Ультразвуковая чистка зубов</h3>
-              <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие. </p>
+              <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяевПоявление в доме котенка приятное и радосное событие. </p>
               <a href="#">Читать больше</a>
             </div>
           </li>
@@ -239,15 +241,33 @@
       </div>
     </article>
 
+
+    <section class="map-section">
+      <a href="https://goo.gl/maps/rwpcPjGF1MTQ3K3g7" class="map">
+      <img src="img/Rectangle 48.png" alt="map"></a>
+      <div class="map-form">
+        <h3>Обратная связь</h3>
+        <p>При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+        <form action="https://echo/htmlacademy.ru">
+
+          <input type="text" placeholder="Ваше имя" id="name" name="country_code" pattern="[A-Za-z]{3}" title="Three letter name">
+          <input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Email для обратной связи" name="email" type="email" required>
+          <input type="text" placeholder="Опишите Ваш вопрос.">
+          <input class="btn bnt-light" type="submit">
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <div class="container">
-      <div class="sitenav-wrapper">
+    <div class="container footer-container">
+
+      <div class="footer-inner">
         <img class="logo" src="img/logo.svg" alt="logo" width="178" height="86">
 
-        <ul class="navlist">
-          <li class="active-nav">
+        <ul class="footer-nav">
+          <li>
             <a href="index.html">Главная</a>
           </li>
           <li>
@@ -268,22 +288,6 @@
         </ul>
 
         <a class="question" href="#">Задать вопрос</a>
-      </div>
-      <div class="footer-top-wrapper">
-        <address class="main-adress">
-          г. Мариуполь, проспект Победы, 48а
-        </address>
-        <ul class="tel-list">
-          <li>
-            <a href="tel:+998901234567">(067) 634 -75 - 74</a>
-          </li>
-          <li>
-            <a href="tel:+998901234567">(0637) 57 - 01 - 31</a>
-          </li>
-          <li>
-            <a href="tel:+998901234567">(098) 266 - 43 - 89</a>
-          </li>
-        </ul>
 
         <ul class="scedule">
           <li>
@@ -293,8 +297,29 @@
             <p>Сб - Вс 8:00 - 14:00</p>
           </li>
         </ul>
+
+        <address class="main-adress">
+          г. Мариуполь, проспект Победы, 48а
+        </address>
+        <div class="phone">
+          <ul class="phone-list">
+            <li>
+              <a href="tel:+998901234567">(067) 634 -75 - 74</a>
+            </li>
+            <li>
+              <a href="tel:+998901234567">(0637) 57 - 01 - 31</a>
+            </li>
+            <li>
+              <a href="tel:+998901234567">(098) 266 - 43 - 89</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
+      <p class="rights">© 2020 example. All Rights Reserved</p>
+
     </div>
+
 
   </footer>
 

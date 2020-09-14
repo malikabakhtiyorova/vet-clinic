@@ -256,6 +256,24 @@ img {
   background-image: url("../img/left-pet.png"), url("../img/pet-right.png");
   background-repeat: no-repeat;
   background-position: 0px -80px, 100% 480px;
+  padding-bottom: 100px;
+}
+
+.navlist li:hover {
+  background-color: #FFBD54;
+}
+
+.question:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #FFBD54;
+}
+
+.btn-light:hover {
+  background-color: #333;
 }
 
 .hero-content {
@@ -503,14 +521,18 @@ img {
 
 .be-aware {
   background-image: url("../img/dog-bg.png");
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .sign-in-form {
   padding: 200px 0 200px 0;
-  display: flex;
-  align-items: center;
   margin-left: 270px;
+}
+
+.sign-in-form h2 {
+  font-size: 40px;
+  line-height: 20px;
+  color: #fff;
 }
 
 .sign-in-form input {
@@ -554,9 +576,6 @@ article h2 {
   background-image: url("../img/Rectangle\ 27.png");
 }
 
-.articles li:nth-child(odd) a {
-  margin-top: 20px;
-}
 
 .articles li:nth-child(even) {
   display: flex;
@@ -567,8 +586,8 @@ article h2 {
 }
 .articles li:nth-child(even)::before {
   content: "";
-  width: 305px;
-  height: 435px;
+  width: 310px;
+  height: 470px;
   display: inline-block;
   background-image: url("../img/Rectangle\ 25.png");
   background-repeat: no-repeat;
@@ -608,10 +627,191 @@ article h2 {
 }
 
 footer {
-  background-color: #d6d4d4;
+  background-color:#F3F3F3;
 }
 
-.footer-top-wrapper {
+.footer-inner {
   display: flex;
   align-items: center;
+  padding: 30px;
+  font-size: 14px;
+  line-height: 18px;
 }
+
+.footer-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 230px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-nav li {
+  margin-right: 30px;
+}
+
+.footer-nav li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-nav li:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.phone-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-inner .main-adress {
+  max-width: 200px;
+  display: flex;
+  margin-left: 50px;
+  line-height: 2.1;
+}
+
+.footer-inner .main-adress::before {
+  display: block;
+  margin-top: 8px;
+}
+
+
+.footer-inner .scedule li p {
+  line-height: 2.1;
+  margin: 0;
+}
+
+.footer-inner .scedule li {
+  max-width: 120px;
+}
+
+.footer-inner .question {
+  white-space: nowrap;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+.phone-list {
+  margin: 0;
+  padding: 0;
+}
+
+.phone-list a {
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 2.1;
+  color: #333;
+}
+
+.phone::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/phone.svg");
+  display: inline-block;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.phone {
+  display: flex;
+  margin-left: 50px;
+}
+
+.rights {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #5C5C5C;
+  display: block;
+}
+
+.map-form {
+  background-color: #5C5C5C;
+  width: 100%;
+}
+
+.map-section {
+  display: flex;
+  margin: 200px 0;
+}
+
+.map-section a {
+  display: block;
+  width: 40%;
+}
+
+.map-form {
+  padding: 60px 0;
+  padding-left: 160px;
+}
+
+.map-form h3 {
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.map-form p {
+  font-size: 16px;
+line-height: 20px;
+color: #949494;
+max-width: 360px;
+}
+.map-form form {
+  width: 380px;
+}
+
+.map-form input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.map-form input placeholder {
+  margin-top: 0;
+}
+
+.map-form input:last-of-type {
+  display: inline-block;
+  width: 226px;
+  background-color: #FFBD54;
+  border-radius: 0px;
+}
+.map-section a img {
+  height: 100%;
+  width: auto;
+}
+.map-form form input:nth-child(3) {
+  height: 165px;
+}
+
+.map-form {
+  background-image: url("../img/kisspng-goldfish-koi-clip-art-real-fish-png-clipart-5a7877e5873c15\ 1.png");
+  background-repeat: no-repeat;
+  background-position: 550px 200px;
+}
+
+
+
+
+
+
+
+
+
