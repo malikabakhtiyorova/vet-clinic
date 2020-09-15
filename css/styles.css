@@ -109,7 +109,7 @@ img {
 .header-top-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 160px;
+  padding-left: 200px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -222,6 +222,11 @@ img {
 .navlist a{
   color: #333;
   text-decoration: none;
+}
+
+.map-textarea {
+  margin-top: 30px;
+  padding: 20px;
 }
 
 .active-nav::before, .question::before {
@@ -785,6 +790,10 @@ max-width: 360px;
 
 .map-form input placeholder {
   margin-top: 0;
+}
+
+.sign-in-form input:nth-last-of-type(2) {
+  padding-left: 50px;
 }
 
 .map-form input:last-of-type {

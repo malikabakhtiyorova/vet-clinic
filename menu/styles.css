@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: #aaa;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  background-color: slateblue;
+  align-items: center;
+  margin: 80px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(51, 16, 177, 0.3);
+}
+
+.navlist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-transform: uppercase;
+  margin: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 650px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navlist a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.navlist li {
+  border: 1px solid rgb(40, 62, 128);
+}
+
+.dropdown {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 5%;
+  display: none;
+}
+
+.dropdown li {
+  background-color: rgb(96, 131, 236);
+}
+
+.navlist li:hover {
+  background-color: royalblue;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.social-icons {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+
+.social-icons a {
+  display: block;
+  padding: 10px;
+  border: 2px solid #ccc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: royalblue;
+}
+.logo {
+  display: block;
+  width: 213px;
+  /* border: 1px solid #ccc; */
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  transform: rotate(-20deg);
+  left: 0;
+  top: -15px;
+}
+
+
+.social-icons li:not(:last-child) {
+  margin-right: 10px;
+}
+
