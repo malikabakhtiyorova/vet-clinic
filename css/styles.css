@@ -527,6 +527,8 @@ img {
 .be-aware {
   background-image: url("../img/dog-bg.png");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
 }
 
 .sign-in-form {
